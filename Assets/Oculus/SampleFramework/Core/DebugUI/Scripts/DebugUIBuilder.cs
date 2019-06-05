@@ -321,7 +321,7 @@ public class DebugUIBuilder : MonoBehaviour
       }
       else
       {
-        lp.enabled = false;
+        lp.enabled = true;
       }
     }
   }

@@ -21,11 +21,11 @@ public class VrgTargetLine : MonoBehaviour
 
     void Update()
     {
-        if (!grabber_ || !grabber_.enabled)
-        {
-            line_.enabled = false;
-            return;
-        }
+        //if (!grabber_ || !grabber_.enabled)
+        //{
+        //    line_.enabled = false;
+        //    return;
+        //}
         line_.enabled = true;
 
         var startPos = transform.position;
@@ -33,11 +33,11 @@ public class VrgTargetLine : MonoBehaviour
         var to = grabber_.targetPos - startPos;
 
         var d = to.magnitude;
-        if (d < Mathf.Epsilon) 
-        {
-            line_.enabled = false;
-            return;
-        }
+        //if (d < Mathf.Epsilon) 
+        //{
+        //    line_.enabled = false;
+        //    return;
+        //}
 
         var xAxis = to.normalized;
 

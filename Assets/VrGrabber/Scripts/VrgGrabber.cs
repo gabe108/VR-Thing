@@ -290,6 +290,27 @@ public class VrgGrabber : MonoBehaviour
 
     void Grab(VrgGrabbable grabbable, float distance)
     {
+        if (grabbable.transform.CompareTag("Spawner"))
+        {
+            Rigidbody rigidbody = grabbable.transform.GetComponent<Rigidbody>();
+            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+            Transform tempTrans = grabbable.transform;
+            var temp = Instantiate(tempTrans, tempTrans.position, Quaternion.identity);
+
+            temp.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            grabbable =
+            temp.GetComponent<VrgGrabbable>() ??
+            temp.GetComponentInParent<VrgGrabbable>();
+
+            temp.transform.tag = "Untagged";
+            }
+        else
+        {
+            grabbable =
+            grabbable.GetComponent<VrgGrabbable>() ??
+            grabbable.GetComponentInParent<VrgGrabbable>();
+        }
+
         grabInfo_.grabber = this;
         grabInfo_.grabbable = grabbable;
         grabInfo_.distance = distance;

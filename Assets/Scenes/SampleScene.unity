@@ -358,8 +358,14 @@ PrefabInstance:
       propertyPath: m_grabPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1523761272}
+    - target: {fileID: 1207227430495387149, guid: ea7023a21c9958f439273c740ffccda8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114786635590108442, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
+    - {fileID: 1207227430495387149, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
 --- !u!1 &400106218
 GameObject:
@@ -836,12 +842,39 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &1523761270
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523761268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Center: {x: 0.00793314, y: 0.019021988, z: 0.010644197}
 --- !u!65 &1523761272 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 65028612652022346, guid: ea7023a21c9958f439273c740ffccda8,
     type: 3}
   m_PrefabInstance: {fileID: 344180017}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1523761276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523761268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3620dd0715687d045b430d3f0f605aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_state: 0
+  m_collider: {fileID: 1523761272}
 --- !u!1 &1579464781
 GameObject:
   m_ObjectHideFlags: 0

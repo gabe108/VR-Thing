@@ -2,24 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Highscore : MonoBehaviour
 {
+    public TextMeshProUGUI currentScoreText;
+    public TextMeshProUGUI highScoreText;
 
-    public Text currentScoreText;
-    public Text highScoreText;
+    [Range(0, 1)]
+    public float TimeToSpawnUI;
 
     private int highScore = 0;
     private int currentScore = 0;
+    float m_timer = 0;
 
+    public GameObject uiBox;
     void Start()
     {
         highScore = PlayerPrefs.GetInt("Highscore", 0);
         highScoreText.text = highScore.ToString();
+        uiBox.SetActive(false);
     }
 
     void Update()
     {
+        if (OVRInput.Get(OVRInput.Touch.PrimaryTouchpad))
+        {
+            m_timer += Time.deltaTime;
+            if(m_timer > TimeToSpawnUI)
+                uiBox.SetActive(true);
+        }
+        else
+        { 
+            uiBox.SetActive(false);
+            m_timer = 0.0f;
+        }
+
+           
+
+
         currentScoreText.text = currentScore.ToString();
 
         if(currentScore > highScore)

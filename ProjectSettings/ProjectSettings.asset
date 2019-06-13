@@ -153,6 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: Com.GabeisAwesome36.com
     Android: Com.GabeisAwesome2.com
     Standalone: com.oculus.UnitySample
     WebGL: com.oculus.UnitySample

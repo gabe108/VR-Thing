@@ -410,6 +410,11 @@ PrefabInstance:
       propertyPath: grip
       value: 
       objectReference: {fileID: 809389614}
+    - target: {fileID: 8455376525435158010, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
+        type: 3}
+      propertyPath: objectTO
+      value: 
+      objectReference: {fileID: 2023033104}
     - target: {fileID: 8460155938450678520, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
         type: 3}
       propertyPath: m_Parameters.colorGradient.atime1
@@ -642,3 +647,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2023033104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6572529672696906586, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1209001686}
+  m_PrefabAsset: {fileID: 0}

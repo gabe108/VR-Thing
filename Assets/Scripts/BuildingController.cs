@@ -62,18 +62,18 @@ public class BuildingController : MonoBehaviour
     public void UpdateFurthestThrow()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
-        float dist;
+        float dist = 0;
         if (rb.velocity != Vector3.zero || transform.position.y > 0)
         {
             dist = Vector3.Distance(transform.position, highScore.transform.position);
-            currentThrow = dist;
-            if (currentThrow > furthestThrow)
-                furthestThrow = currentThrow;
-
-            CurrentThrowScore.text = currentThrow.ToString();
-            FurthestScore.text = furthestThrow.ToString();
         }
 
+        currentThrow = dist;
+        if (currentThrow > furthestThrow)
+            furthestThrow = currentThrow;
+
+        CurrentThrowScore.text = currentThrow.ToString();
+        FurthestScore.text = furthestThrow.ToString();
 
     }
 

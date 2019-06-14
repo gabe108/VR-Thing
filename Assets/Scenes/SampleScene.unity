@@ -458,9 +458,9 @@ RectTransform:
   - {fileID: 343704176}
   - {fileID: 1760238861}
   - {fileID: 403396697}
-  - {fileID: 1138331424}
   - {fileID: 901958252}
   - {fileID: 1581512224}
+  - {fileID: 1138331424}
   m_Father: {fileID: 1887358562}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -845,7 +845,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400106222}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1066,6 +1066,10 @@ MonoBehaviour:
   popupText: {fileID: 4466204906736025356, guid: 9c7e4bdc6cb108c49a6162547af2930e,
     type: 3}
   m_state: 0
+  currentThrow: 0
+  furthestThrow: 0
+  FurthestScore: {fileID: 0}
+  CurrentThrowScore: {fileID: 0}
 --- !u!114 &1070674355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,7 +1154,7 @@ RectTransform:
   m_LocalScale: {x: 0.9995775, y: 0.99957764, z: 0.9995775}
   m_Children: []
   m_Father: {fileID: 400106222}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1626,6 +1630,10 @@ MonoBehaviour:
   popupText: {fileID: 4466204906736025356, guid: 9c7e4bdc6cb108c49a6162547af2930e,
     type: 3}
   m_state: 0
+  currentThrow: 0
+  furthestThrow: 0
+  FurthestScore: {fileID: 1138331425}
+  CurrentThrowScore: {fileID: 1581512225}
 --- !u!1 &1579464781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1824,7 @@ RectTransform:
   m_LocalScale: {x: 0.9995775, y: 0.99957764, z: 0.9995775}
   m_Children: []
   m_Father: {fileID: 400106222}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2134,6 +2142,10 @@ MonoBehaviour:
   popupText: {fileID: 4466204906736025356, guid: 9c7e4bdc6cb108c49a6162547af2930e,
     type: 3}
   m_state: 0
+  currentThrow: 0
+  furthestThrow: 0
+  FurthestScore: {fileID: 0}
+  CurrentThrowScore: {fileID: 0}
 --- !u!114 &1817031419
 MonoBehaviour:
   m_ObjectHideFlags: 0

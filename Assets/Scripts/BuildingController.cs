@@ -20,17 +20,21 @@ public class BuildingController : MonoBehaviour
     public BuildingState m_state;
     public float currentThrow;
     public float furthestThrow;
-    public TextMeshPro FurthestScore;
-    public TextMeshPro CurrentThrowScore;
+    public TextMeshProUGUI FurthestScore;
+    public TextMeshProUGUI CurrentThrowScore;
 
-    Highscore highScore;    
+    Highscore highScore;
+
+    private void Awake()
+    {
+        FurthestScore = GameObject.Find("FurthestScore").GetComponent<TextMeshProUGUI>();
+        CurrentThrowScore = GameObject.Find("CurrentThrowScore").GetComponent<TextMeshProUGUI>();
+    }
 
     private void Start()
     {
         m_state = BuildingState.DEFAULT;
         highScore = GameObject.Find("OVRCameraRig").GetComponent<Highscore>();
-        FurthestScore = GameObject.Find("FurthestScore").GetComponent<TextMeshPro>();
-        CurrentThrowScore = GameObject.Find("CurrentThrowScore").GetComponent<TextMeshPro>();
     }
 
     private void Update()

@@ -279,6 +279,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_grabPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_grabPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1523761272}
     - target: {fileID: 1542584392503418, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
       propertyPath: m_Name
       value: DistanceGrabWoodBlockPf
@@ -343,28 +355,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114786635590108442, guid: ea7023a21c9958f439273c740ffccda8,
-        type: 3}
-      propertyPath: m_grabPoints.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114786635590108442, guid: ea7023a21c9958f439273c740ffccda8,
-        type: 3}
-      propertyPath: m_snapOffset
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114786635590108442, guid: ea7023a21c9958f439273c740ffccda8,
-        type: 3}
-      propertyPath: m_grabPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 1523761272}
     - target: {fileID: 1207227430495387149, guid: ea7023a21c9958f439273c740ffccda8,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 114786635590108442, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
     - {fileID: 1207227430495387149, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
 --- !u!1 &400106218
@@ -551,6 +547,8 @@ MonoBehaviour:
   currentScoreText: {fileID: 343704177}
   highScoreText: {fileID: 1760238862}
   TimeToSpawnUI: 0.2
+  highScore: 0
+  currentScore: 0
   uiBox: {fileID: 1887358561}
 --- !u!4 &809389614 stripped
 Transform:
@@ -638,6 +636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OVRCameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572529672697405302, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6572529672696906586, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
         type: 3}

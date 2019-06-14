@@ -121,7 +121,7 @@ public class VrgGrabbable : MonoBehaviour
     public void OnReleased(VrgGrabber grabber)
     {
         grabbers_.Remove(grabber);
-
+        transform.GetComponent<BuildingController>().m_state = BuildingState.RELEASED;
         onReleased.Invoke();
     }
 

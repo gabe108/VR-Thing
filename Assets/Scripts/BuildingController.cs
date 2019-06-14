@@ -24,6 +24,7 @@ public class BuildingController : MonoBehaviour
     public TextMeshProUGUI CurrentThrowScore;
 
     Highscore highScore;
+    float dist = 0;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class BuildingController : MonoBehaviour
 
     private void Update()
     {
+        this.enabled = true;
         switch (m_state)
         {
             case BuildingState.DEFAULT:
@@ -65,11 +67,15 @@ public class BuildingController : MonoBehaviour
 
     public void UpdateFurthestThrow()
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        float dist = 0;
+        Rigidbody rb = transform.GetComponent<Rigidbody>();
+        
         if (rb.velocity != Vector3.zero || transform.position.y > 0)
         {
             dist = Vector3.Distance(transform.position, highScore.transform.position);
+        }
+        else if(rb.velocity == Vector3.zero || transform.position.y < 0)
+        {
+            m_state = BuildingState.DEFAULT;
         }
 
         currentThrow = dist;

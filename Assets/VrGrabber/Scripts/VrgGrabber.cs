@@ -327,7 +327,6 @@ namespace VrGrabber
                 Transform tempTrans = grabbable.transform;
                 var temp = Instantiate(tempTrans, tempTrans.position, Quaternion.identity);
                 temp.GetComponent<Collider>().isTrigger = true;
-
                 temp.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                 temp.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
                 grabbable =
@@ -347,8 +346,7 @@ namespace VrGrabber
 
             if(grabbable != null && grabbable.GetComponent<BuildingController>() != null)
             {
-                if (grabbable.GetComponent<BuildingController>())
-                    grabbable.GetComponent<BuildingController>().m_state = BuildingState.PICKED_UP;
+                grabbable.GetComponent<BuildingController>().m_state = BuildingState.PICKED_UP;
             }
             //GABES CODE END
 
@@ -468,7 +466,7 @@ namespace VrGrabber
             grabInfo_ = new GrabInfo();
             grabbable.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             grabbable.GetComponent<Collider>().isTrigger = false;
-            grabbable.GetComponent<BuildingController>().m_state = BuildingState.RELEASED;
+            
             m_grabbedObject = null;
         }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PopUpText : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PopUpText : MonoBehaviour
     private Transform MyTransform;
     public bool alignNotLook = true;
 
+    TextMeshPro text;
     // Use this for initialization
     void Start()
     {
@@ -19,5 +21,12 @@ public class PopUpText : MonoBehaviour
             MyTransform.forward = MyCameraTransform.forward;
         else
             MyTransform.LookAt(MyCameraTransform, Vector3.up);
+
+        Destroy(gameObject, 1f);
+    }
+
+    private void Update()
+    {
+       
     }
 }

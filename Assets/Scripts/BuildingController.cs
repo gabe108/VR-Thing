@@ -7,6 +7,7 @@ public enum BuildingState
 {
     DEFAULT,
     PICKED_UP,
+    RELEASED,
     DESTROYED,
 
     COUNT
@@ -17,6 +18,10 @@ public class BuildingController : MonoBehaviour
     public int destroyScore;
     public Transform popupText;
     public BuildingState m_state;
+    public float currentThrow;
+    public float furthestThrow;
+    public TextMeshPro FurthestScore;
+    public TextMeshPro CurrentThrowScore;
 
     Highscore highScore;    
 
@@ -24,6 +29,8 @@ public class BuildingController : MonoBehaviour
     {
         m_state = BuildingState.DEFAULT;
         highScore = GameObject.Find("OVRCameraRig").GetComponent<Highscore>();
+        FurthestScore = GameObject.Find("FurthestScore").GetComponent<TextMeshPro>();
+        CurrentThrowScore = GameObject.Find("CurrentThrowScore").GetComponent<TextMeshPro>();
     }
 
     private void Update()
@@ -38,6 +45,10 @@ public class BuildingController : MonoBehaviour
 
                 break;
 
+            case BuildingState.RELEASED:
+                UpdateFurthestThrow();
+                break;
+
             case BuildingState.DESTROYED:
                 Destroy(gameObject, 1f);
                 break;
@@ -46,6 +57,24 @@ public class BuildingController : MonoBehaviour
 
                 break;
         }
+    }
+
+    public void UpdateFurthestThrow()
+    {
+        Rigidbody rb = GetComponent<Rigidbody>();
+        float dist;
+        if (rb.velocity != Vector3.zero || transform.position.y > 0)
+        {
+            dist = Vector3.Distance(transform.position, highScore.transform.position);
+            currentThrow = dist;
+            if (currentThrow > furthestThrow)
+                furthestThrow = currentThrow;
+
+            CurrentThrowScore.text = currentThrow.ToString();
+            FurthestScore.text = furthestThrow.ToString();
+        }
+
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -60,7 +89,7 @@ public class BuildingController : MonoBehaviour
     private void OnDestroy()
     {
         Vector3 temp = transform.position;
-        temp.y += 0.5f;
+        temp.y -= 0.5f;
         Transform g = Instantiate(popupText, temp, Quaternion.identity, null);
         g.GetComponent<TextMeshPro>().text = destroyScore.ToString();
         highScore.currentScore += destroyScore;

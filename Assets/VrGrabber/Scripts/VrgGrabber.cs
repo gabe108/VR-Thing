@@ -468,6 +468,7 @@ namespace VrGrabber
             grabInfo_ = new GrabInfo();
             grabbable.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             grabbable.GetComponent<Collider>().isTrigger = false;
+            grabbable.GetComponent<BuildingController>().m_state = BuildingState.RELEASED;
             m_grabbedObject = null;
         }
 

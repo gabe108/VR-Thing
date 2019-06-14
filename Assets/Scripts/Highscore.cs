@@ -9,6 +9,8 @@ public class Highscore : MonoBehaviour
     public TextMeshProUGUI currentScoreText;
     public TextMeshProUGUI highScoreText;
     public Transform popupScore;
+    public float FurthestThrow;
+    public float CurrentThrow;
 
     [Range(0, 1)]
     public float TimeToSpawnUI;

@@ -345,7 +345,7 @@ namespace VrGrabber
                 m_grabbedObject = grabbable.transform;
             }
 
-            if(grabbable != null)
+            if(grabbable != null && grabbable.GetComponent<BuildingController>() != null)
             {
                 if (grabbable.GetComponent<BuildingController>())
                     grabbable.GetComponent<BuildingController>().m_state = BuildingState.PICKED_UP;

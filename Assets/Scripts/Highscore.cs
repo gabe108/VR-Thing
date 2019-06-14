@@ -8,12 +8,13 @@ public class Highscore : MonoBehaviour
 {
     public TextMeshProUGUI currentScoreText;
     public TextMeshProUGUI highScoreText;
+    public Transform popupScore;
 
     [Range(0, 1)]
     public float TimeToSpawnUI;
 
-    private int highScore = 0;
-    private int currentScore = 0;
+    public int highScore = 0;
+    public int currentScore = 0;
     float m_timer = 0;
 
     public GameObject uiBox;
@@ -36,11 +37,8 @@ public class Highscore : MonoBehaviour
         { 
             uiBox.SetActive(false);
             m_timer = 0.0f;
-        }
-
-           
-
-
+        }   
+        
         currentScoreText.text = currentScore.ToString();
 
         if(currentScore > highScore)

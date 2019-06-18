@@ -22,11 +22,6 @@ public class PopUpText : MonoBehaviour
         else
             MyTransform.LookAt(MyCameraTransform, Vector3.up);
 
-        Destroy(gameObject, 1f);
-    }
-
-    private void Update()
-    {
-       
+        Destroy(transform.gameObject, 1f);
     }
 }

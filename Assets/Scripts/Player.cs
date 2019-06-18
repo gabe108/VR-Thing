@@ -18,11 +18,11 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (vrgGrabber.m_grabbedObject.CompareTag("Start"))
-        {
-            Destroy(vrgGrabber.m_grabbedObject);
-            StartCoroutine(wait());           
-        }
+        //if (vrgGrabber.m_grabbedObject.CompareTag("Start"))
+        //{
+        //    Destroy(vrgGrabber.m_grabbedObject);
+        //    StartCoroutine(wait());           
+        //}
 
     }
 

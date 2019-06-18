@@ -7,6 +7,8 @@ TagManager:
   - Spawner
   - Building
   - Start
+  - Ground
+  - Hoop
   layers:
   - Default
   - TransparentFX

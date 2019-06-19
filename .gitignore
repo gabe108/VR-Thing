@@ -3,6 +3,7 @@ Logs
 Temp
 Library
 obj
+*.csproj
 UnityFBXExporter
 Assets/UnityFBXExporter\.meta
 

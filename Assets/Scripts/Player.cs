@@ -6,16 +6,23 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     VrGrabber.VrgGrabber vrgGrabber;
-    private Vector3 headHeight;
 
     void Start()
     {
-        vrgGrabber = GameObject.Find("Vrg Right Grabber").GetComponent<VrGrabber.VrgGrabber>();
+        vrgGrabber = GameObject.Find("VrGrabber").GetComponent<VrGrabber.VrgGrabber>();
     }
 
     void Update()
-    {
-        if (vrgGrabber.m_grabbedObject.CompareTag("Start"))
+    {        
+        if (Input.GetKey(KeyCode.P))
+        {
+            //Destroy(vrgGrabber.m_grabbedObject.gameObject);
+            StartCoroutine(wait());
+        }
+
+        if (vrgGrabber.m_grabbedObject == null)
+            return;
+        else if (vrgGrabber.m_grabbedObject.CompareTag("Start"))
         {
             Destroy(vrgGrabber.m_grabbedObject.gameObject);
             StartCoroutine(wait());           

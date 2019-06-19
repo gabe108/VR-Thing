@@ -48,26 +48,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &1523761276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163750312637188923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3620dd0715687d045b430d3f0f605aa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyScore: 100
-  popupText: {fileID: 4466204906736025356, guid: 9c7e4bdc6cb108c49a6162547af2930e,
-    type: 3}
-  m_state: 0
-  currentThrow: 0
-  furthestThrow: 0
-  FurthestScore: {fileID: 0}
-  CurrentThrowScore: {fileID: 0}
 --- !u!1001 &1162775631637584705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 1208096557168140555}
     - target: {fileID: 1542584392503418, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
       propertyPath: m_Name
-      value: box
+      value: box Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1542584392503418, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
       propertyPath: m_TagString

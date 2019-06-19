@@ -1792,7 +1792,6 @@ GameObject:
   - component: {fileID: 5498635366893150861}
   - component: {fileID: 6920879304693746189}
   - component: {fileID: 2159922760934689782}
-  - component: {fileID: 1497361248442748264}
   m_Layer: 2
   m_Name: Score
   m_TagString: Untagged
@@ -1878,28 +1877,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1497361248442748264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8144441952326214261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80543b78d4fe1d24b98a6230f301f69f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiBox: {fileID: 8144441952326214261}
-  currentScoreText: {fileID: 4746050455521751366}
-  highScoreText: {fileID: 5894111542323683349}
-  currentThrowText: {fileID: 7786227583281004466}
-  furthestThrowText: {fileID: 4663392932682041728}
-  furthestThrow: 0
-  currentThrow: 0
-  highScore: 0
-  currentScore: 0
-  TimeToSpawnUI: 0.5
 --- !u!1 &8740496663493886870
 GameObject:
   m_ObjectHideFlags: 0

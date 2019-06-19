@@ -50,7 +50,7 @@ public class BaseObject : VrgGrabbable
             m_state = ObjectStates.DESTROYED;
         }
 
-        scoreBoard.currentThrow = dist;        
+        scoreBoard.currentThrow = (int)dist;        
     }
 
     private void OnCollisionEnter(Collision collision)

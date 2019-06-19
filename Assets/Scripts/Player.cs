@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     {
         StartCoroutine(GameObject.FindObjectOfType<OVRScreenFade>().Fade(0, 1));
         yield return new WaitForSeconds(3f);
+        PlayerPrefs.Save();
         SceneManager.LoadScene(1);
         yield return null;
     }

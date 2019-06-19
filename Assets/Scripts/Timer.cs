@@ -24,6 +24,7 @@ public class Timer : MonoBehaviour
 
     void GameOver()
     {
+        PlayerPrefs.Save();
         SceneManager.LoadScene(2);
     }
 }

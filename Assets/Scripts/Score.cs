@@ -12,11 +12,12 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI currentThrowText;
     public TextMeshProUGUI furthestThrowText;
 
-    public float furthestThrow;
-    public float currentThrow;    
+    public int furthestThrow;
+    public int currentThrow;    
     public int highScore = 0;
     public int currentScore = 0;
     float m_timer = 0;
+    bool hasSetScores = false;
 
     [Range(0, 1)]
     public float TimeToSpawnUI;
@@ -29,6 +30,8 @@ public class Score : MonoBehaviour
     void Start()
     {
         uiBox.SetActive(false);
+        highScore = PlayerPrefs.GetInt("HighScore");
+        furthestThrow = PlayerPrefs.GetInt("FurthestThrow");
     }
 
     void Update()
@@ -51,19 +54,25 @@ public class Score : MonoBehaviour
             furthestThrowText.gameObject.activeSelf)
         {
             currentScoreText.text = currentScore.ToString();
+            PlayerPrefs.SetInt("CurrentScore", currentScore);
 
-            if (currentScore > highScore)
+            if (currentScore > highScore || !hasSetScores)
             {
                 highScore = currentScore;
+                PlayerPrefs.SetInt("HighScore", highScore);
                 highScoreText.text = highScore.ToString();
+                hasSetScores = true;
             }
 
             currentThrowText.text = currentThrow.ToString();
+            PlayerPrefs.SetInt("CurrentThrow", currentThrow);
 
-            if (currentThrow > furthestThrow)
+            if (currentThrow > furthestThrow || !hasSetScores)
             {
                 furthestThrow = currentThrow;
+                PlayerPrefs.SetInt("FurthestThrow", currentThrow);
                 furthestThrowText.text = furthestThrow.ToString();
+                hasSetScores = true;
             }
         }
     }

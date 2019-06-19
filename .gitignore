@@ -3,10 +3,18 @@ Logs
 Temp
 Library
 obj
-*.csproj
 UnityFBXExporter
 Assets/UnityFBXExporter\.meta
 
 Assets/Prefabs/hhhhhhhh\.7z
 
 Assets/Prefabs/hhhhhhhh\.7z\.meta
+Assembly-CSharp-Editor\.csproj
+
+Assembly-CSharp\.csproj
+
+Oculus\.VR\.csproj
+
+Oculus\.VR\.Editor\.csproj
+
+Oculus\.VR\.Scripts\.Editor\.csproj

@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: d93639f8a09ce744fbe4114d2d2f54ec
+guid: b4b4bc6a657f809439c730bf24db367c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCylinder1
     400000: //RootNode
-    400002: pCylinder1
-    2100000: pCylinder1Mat
-    2300000: pCylinder1
-    3300000: pCylinder1
-    4300000: pCylinder1
+    2100000: Barrel_VR_lambert4SG1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Barrel_VR:pCylinder3
   externalObjects: {}
   materials:
     importMaterials: 1

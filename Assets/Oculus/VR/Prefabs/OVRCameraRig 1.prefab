@@ -1269,6 +1269,7 @@ GameObject:
   - component: {fileID: 6572529672691362438}
   - component: {fileID: 6572529672691362448}
   - component: {fileID: 6530701193321889590}
+  - component: {fileID: 4483645344649877705}
   m_Layer: 0
   m_Name: OVRCameraRig 1
   m_TagString: Untagged
@@ -1375,6 +1376,28 @@ MonoBehaviour:
   resetHmdPoseByMiddleMouseButton: 1
   activateKeys: 3201000031010000
   pitchKeys: 3401000033010000
+--- !u!114 &4483645344649877705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6572529672697405302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80543b78d4fe1d24b98a6230f301f69f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiBox: {fileID: 8144441952326214261}
+  currentScoreText: {fileID: 4746050455521751366}
+  highScoreText: {fileID: 5894111542323683349}
+  currentThrowText: {fileID: 7786227583281004466}
+  furthestThrowText: {fileID: 4663392932682041728}
+  furthestThrow: 0
+  currentThrow: 0
+  highScore: 0
+  currentScore: 0
+  TimeToSpawnUI: 0.5
 --- !u!1 &6572529672697405304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2104,12 +2127,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5354646566276735014, guid: eec2abd1937393e4fa45ff165b1eecf5,
+    - target: {fileID: 5354646566276735012, guid: eec2abd1937393e4fa45ff165b1eecf5,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5354646566276735012, guid: eec2abd1937393e4fa45ff165b1eecf5,
+    - target: {fileID: 5354646566276735014, guid: eec2abd1937393e4fa45ff165b1eecf5,
         type: 3}
       propertyPath: m_Enabled
       value: 1

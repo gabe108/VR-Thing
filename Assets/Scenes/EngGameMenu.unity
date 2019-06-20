@@ -2144,12 +2144,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7786227583281004466, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
+    - target: {fileID: 4746050455521751366, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
         type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7786227583281004466, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
+    - target: {fileID: 4746050455521751366, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -2160,6 +2160,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5894111542323683349, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786227583281004466, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786227583281004466, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -2359,16 +2369,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.11
       objectReference: {fileID: 0}
-    - target: {fileID: 4746050455521751366, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4746050455521751366, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 804400141185810869, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -2407,6 +2407,11 @@ PrefabInstance:
     - target: {fileID: 2772802735320945405, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
         type: 3}
       propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572529672691152352, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8416199504787784190, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
@@ -2423,11 +2428,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6572529672691152352, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8359523461423404604, guid: d75394f771e59d94d8d06ad9dd1b2c7a,
         type: 3}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -31,11 +32,20 @@ public class Score : MonoBehaviour
     {
         uiBox.SetActive(false);
         highScore = PlayerPrefs.GetInt("HighScore");
+        highScoreText.text = highScore.ToString();
         furthestThrow = PlayerPrefs.GetInt("FurthestThrow");
+        furthestThrowText.text = furthestThrow.ToString();
+
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            currentScore = PlayerPrefs.GetInt("CurrentScore");
+            currentThrow = PlayerPrefs.GetInt("CurrentThrow");
+        }
     }
 
     void Update()
-    {
+    {   
+
         if (OVRInput.Get(OVRInput.Touch.PrimaryTouchpad) || Input.GetKey(KeyCode.A))
         {
             m_timer += Time.deltaTime;
@@ -48,32 +58,28 @@ public class Score : MonoBehaviour
             m_timer = 0.0f;
         }
 
-        if (currentScoreText.gameObject.activeSelf &&
-            highScoreText.gameObject.activeSelf &&
-            currentThrowText.gameObject.activeSelf &&
-            furthestThrowText.gameObject.activeSelf)
+        currentScoreText.text = currentScore.ToString();
+        PlayerPrefs.SetInt("CurrentScore", currentScore);
+
+        if (currentScore > highScore)
         {
-            currentScoreText.text = currentScore.ToString();
-            PlayerPrefs.SetInt("CurrentScore", currentScore);
-
-            if (currentScore > highScore || !hasSetScores)
-            {
-                highScore = currentScore;
-                PlayerPrefs.SetInt("HighScore", highScore);
-                highScoreText.text = highScore.ToString();
-                hasSetScores = true;
-            }
-
-            currentThrowText.text = currentThrow.ToString();
-            PlayerPrefs.SetInt("CurrentThrow", currentThrow);
-
-            if (currentThrow > furthestThrow || !hasSetScores)
-            {
-                furthestThrow = currentThrow;
-                PlayerPrefs.SetInt("FurthestThrow", currentThrow);
-                furthestThrowText.text = furthestThrow.ToString();
-                hasSetScores = true;
-            }
+            highScore = currentScore;
+            PlayerPrefs.SetInt("HighScore", highScore);
+            highScoreText.text = highScore.ToString();
+            hasSetScores = true;
         }
+
+        currentThrowText.text = currentThrow.ToString();
+        PlayerPrefs.SetInt("CurrentThrow", currentThrow);
+
+        if (currentThrow > furthestThrow)
+        {
+            furthestThrow = currentThrow;
+            PlayerPrefs.SetInt("FurthestThrow", currentThrow);
+            furthestThrowText.text = furthestThrow.ToString();
+            hasSetScores = true;
+        }
+        PlayerPrefs.Save();
+        Debug.Log(PlayerPrefs.GetInt("HighScore", 0));
     }
 }

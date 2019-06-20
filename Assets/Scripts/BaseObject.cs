@@ -58,13 +58,6 @@ public class BaseObject : VrgGrabbable
         if (collision.transform.CompareTag("Ground"))
             return;
 
-        if (collision.transform.CompareTag("Hoop"))
-        {
-            collision.transform.GetComponent<Hoop>().play = true;
-            m_state = ObjectStates.DESTROYED;
-            return;
-        }
-
         BaseObject obj = collision.gameObject.GetComponent<BaseObject>();
         obj.m_state = ObjectStates.DESTROYED;
     }

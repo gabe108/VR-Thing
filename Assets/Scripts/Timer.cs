@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
+        FindObjectOfType<AudioManager>().Play("Background");
     }
 
     void Update()
@@ -23,8 +24,7 @@ public class Timer : MonoBehaviour
     }
 
     void GameOver()
-    {
-        
+    {       
         SceneManager.LoadScene(2);
     }
 }

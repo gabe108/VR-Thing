@@ -281,12 +281,6 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions">
-      <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
@@ -300,25 +294,19 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>C:/Users/s181209/Desktop/Projects/VR/VR-Thing/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>C:/Users/s181294.AIE/Documents/VR-Thing/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/s181209/Desktop/Projects/VR/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/s181294.AIE/Documents/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/s181209/Desktop/Projects/VR/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/s181294.AIE/Documents/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/s181209/Desktop/Projects/VR/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/s181294.AIE/Documents/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>C:/Users/s181209/Desktop/Projects/VR/VR-Thing/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <HintPath>C:/Users/s181294.AIE/Documents/VR-Thing/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity 2018.3.8f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -714,6 +702,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioImportPostProcessor.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioManagerInspector.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\MinMaxPropertyDrawer.cs" />
@@ -741,6 +730,8 @@
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPReflectionCustomGUI.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarPBRV2Simple.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShader.shader" />

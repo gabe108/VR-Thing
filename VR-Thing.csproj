@@ -246,19 +246,13 @@
       <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/s181209/Desktop/Projects/VR/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/s181294.AIE/Documents/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/s181209/Desktop/Projects/VR/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/s181294.AIE/Documents/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/s181209/Desktop/Projects/VR/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <HintPath>C:/Users/s181294.AIE/Documents/VR-Thing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity 2018.3.8f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -641,6 +635,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -931,14 +926,15 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
     <Compile Include="Assets\Scripts\BaseObject.cs" />
-    <Compile Include="Assets\Scripts\BuildingController.cs" />
     <Compile Include="Assets\Scripts\Buildings.cs" />
-    <Compile Include="Assets\Scripts\DeleteMe.cs" />
+    <Compile Include="Assets\Scripts\DestructionParticle.cs" />
     <Compile Include="Assets\Scripts\Hooman.cs" />
+    <Compile Include="Assets\Scripts\Hoop.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PopUpText.cs" />
     <Compile Include="Assets\Scripts\SceneFader.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />
     <Compile Include="Assets\VrGrabber\Scripts\VrgDevice.cs" />
     <Compile Include="Assets\VrGrabber\Scripts\VrgFloatingObject.cs" />
@@ -952,6 +948,8 @@
     <Compile Include="Assets\VrGrabber\Scripts\VrgWinMRMotionControllerDevice.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarPBRV2Simple.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShader.shader" />

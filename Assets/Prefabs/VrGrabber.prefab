@@ -174,7 +174,7 @@ MonoBehaviour:
   side: 1
   grip: {fileID: 0}
   line: {fileID: 0}
-  maxGrabDistance: 10
+  maxGrabDistance: 50
   stickMoveSpeed: 0.05
   layerMask:
     serializedVersion: 2

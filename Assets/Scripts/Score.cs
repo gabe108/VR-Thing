@@ -80,6 +80,5 @@ public class Score : MonoBehaviour
             hasSetScores = true;
         }
         PlayerPrefs.Save();
-        Debug.Log(PlayerPrefs.GetInt("HighScore", 0));
     }
 }

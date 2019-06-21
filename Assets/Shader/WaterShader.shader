@@ -9,6 +9,7 @@
 		_WaveA("Wave A (dir, steepness, wavelength)", Vector) = (1,0,0.5,10)
 		_WaveB("Wave B", Vector) = (0,1,0.25,20)
 		_WaveC("Wave C", Vector) = (1,1,0.15,10)
+		_Speed("Speed", Range(0, 5)) = 3
 	}
     SubShader
     {
@@ -35,6 +36,8 @@
 			float4 _WaveA;
 			float4 _WaveB;
 			float4 _WaveC;
+			float _Speed;
+
 
 			// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 			// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -48,7 +51,7 @@
 				float steepness = wave.z;
 				float wavelength = wave.w;
 				float k = 2 * UNITY_PI / wavelength;
-				float c = sqrt(9.8 / k);
+				float c = sqrt(9.8 / k) / _Speed;
 				float2 d = normalize(wave.xy);
 				float f = k * (dot(d, p.xz) - c * _Time.y);
 				float a = steepness / k;

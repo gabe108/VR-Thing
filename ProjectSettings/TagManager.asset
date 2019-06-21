@@ -9,6 +9,8 @@ TagManager:
   - Start
   - Ground
   - Hoop
+  - Water
+  - Mountain
   layers:
   - Default
   - TransparentFX

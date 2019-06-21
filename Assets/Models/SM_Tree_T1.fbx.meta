@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: cdb06d9a43693484aa0d01ed61002ffc
+guid: 370a8cda14218d54784f7b9790cf3464
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: StingrayPBS1
+    2100000: lambert8
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCylinder1
+    4300000: SM_Tree_T1
   externalObjects: {}
   materials:
     importMaterials: 1

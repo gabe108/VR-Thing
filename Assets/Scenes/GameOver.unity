@@ -4290,6 +4290,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TM_Quit_T1
       objectReference: {fileID: 0}
+    - target: {fileID: 4307159410925071414, guid: b75fd52ce739880478b3b09481c6241f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Quit
+      objectReference: {fileID: 0}
     - target: {fileID: 4307159410925170710, guid: b75fd52ce739880478b3b09481c6241f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4345,8 +4350,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1240362399699472379, guid: b75fd52ce739880478b3b09481c6241f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b75fd52ce739880478b3b09481c6241f, type: 3}
+--- !u!1 &4307159409147028376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4307159410925071414, guid: b75fd52ce739880478b3b09481c6241f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4307159409147028375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4307159409147028377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4307159409147028376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcfec47793a00734e891f607cc715e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isScalable: 1
+  avoidIntersection: 0
+  maxSpeed: 10
+  onGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onGrabClicked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onGrabMoved:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_state: 0
+  points: 0
+  dist: 0
+  player: {fileID: 0}
+  scoreBoard: {fileID: 0}
 --- !u!1001 &4595909074590495928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4358,6 +4410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TM_Return_T1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4595909074657252466, guid: 8509cb6f3359f8f44a284d3b2cc9adb4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 4595909074657675346, guid: 8509cb6f3359f8f44a284d3b2cc9adb4,
         type: 3}
@@ -4416,6 +4473,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8509cb6f3359f8f44a284d3b2cc9adb4, type: 3}
+--- !u!1 &4595909074590495929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4595909074657252466, guid: 8509cb6f3359f8f44a284d3b2cc9adb4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4595909074590495928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4595909074590495930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4595909074590495929}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2067206, y: 0.12146282, z: 0.024999999}
+  m_Center: {x: -0.015414894, y: 0.05871488, z: 0.012499999}
+--- !u!114 &4595909074590495931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4595909074590495929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcfec47793a00734e891f607cc715e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isScalable: 1
+  avoidIntersection: 0
+  maxSpeed: 10
+  onGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onGrabClicked:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onGrabMoved:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_state: 0
+  points: 0
+  dist: 0
+  player: {fileID: 0}
+  scoreBoard: {fileID: 0}
+--- !u!54 &4595909074590495932
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4595909074590495929}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &5499488184057720015
 PrefabInstance:
   m_ObjectHideFlags: 0

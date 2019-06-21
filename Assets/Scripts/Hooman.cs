@@ -17,11 +17,11 @@ public class Hooman : BaseObject
                 break;
 
             case ObjectStates.RELEASED:
-                UpdateFurthestThrow();
+
                 break;
 
             case ObjectStates.DESTROYED:
-                Destroy(gameObject, 1f);
+
                 break;
 
             default:

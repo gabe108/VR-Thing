@@ -11,6 +11,10 @@ TagManager:
   - Hoop
   - Water
   - Mountain
+  - Bread
+  - StartText
+  - Menu
+  - Quit
   layers:
   - Default
   - TransparentFX

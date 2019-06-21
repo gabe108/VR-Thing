@@ -16,7 +16,8 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        timerText.text = timeLeft.ToString();
+        if(timerText != null)
+            timerText.text = timeLeft.ToString("0.0");
 
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0 )

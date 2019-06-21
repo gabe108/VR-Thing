@@ -10,6 +10,7 @@ public class PopUpText : MonoBehaviour
     public bool alignNotLook = true;
 
     TextMeshPro text;
+
     // Use this for initialization
     void Start()
     {

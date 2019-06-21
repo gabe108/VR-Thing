@@ -54,7 +54,7 @@ public class Score : MonoBehaviour
         }
         else
         {
-            //uiBox.SetActive(false);
+            uiBox.SetActive(false);
             m_timer = 0.0f;
         }
 

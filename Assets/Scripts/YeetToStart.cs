@@ -7,7 +7,7 @@ public class YeetToStart : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.transform, 1f);
+        other.GetComponent<BaseObject>().m_state = ObjectStates.DESTROYED;
         StartCoroutine(wait());
     }
     private IEnumerator wait()

@@ -11,23 +11,4 @@ public class Player : MonoBehaviour
     {
         vrgGrabber = GameObject.Find("VrGrabber").GetComponent<VrGrabber.VrgGrabber>();
     }
-
-    void Update()
-    {        
-        //if (Input.GetKey(KeyCode.P))
-        //{
-        //    //Destroy(vrgGrabber.m_grabbedObject.gameObject);
-        //    StartCoroutine(wait());
-        //}
-
-        //if (vrgGrabber.m_grabbedObject == null)
-        //    return;
-        //else if (vrgGrabber.m_grabbedObject.CompareTag("Start"))
-        //{
-        //    Destroy(vrgGrabber.m_grabbedObject.gameObject);
-        //    StartCoroutine(wait());           
-        //}
-    }
-
-   
 }
